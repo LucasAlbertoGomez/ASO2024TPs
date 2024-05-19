@@ -1,0 +1,28 @@
+2.1)-
+1)- se puede notar que cada tarea tiene un tiempo de ejecución diferente y al ejecutarlo varias veces el tiempo varia.
+La previsibilidad del tiempo varía según cada tarea, así que no sería predecible.
+
+2)- un proceso que depende de la velocidad de la maquina seria, la multiplicación de matrices.
+
+3)-un proceso que no depende de la velocidad de la maquina seria, algún proceso que conlleve utilizar el internet.
+
+2.2)-
+1)- respecto al tiempo de ejecución se nota que, al utilizar hilos, el tiempo total se reduce.
+
+2)-las funciones no completan su ejecución en el orden establecido debido a que se están ejecutando en hilos separados o aparte.
+
+3)-un caso podría ser en el que múltiples usuarios realizan solicitudes al servidor al mismo tiempo, utilizando hilos mejoraría la velocidad o el tiempo de respuesta.
+
+3.2)-
+1)- al ejecutar el código varias veces, se puede notar que el tiempo de ejecución puede variar.
+
+2)- el valor final del acumulador puede variar si hay una condición de carrera presente.
+
+3)-esto ocurre por la condición de carrera que sucede cuando varios hilos intentan modificar la misma variable compartida, por lo que puede variar el resultado.
+
+4)- esto se puede corregir utilizando un mecanismo de bloqueo o sleep.
+
+4.2)-
+1)El valor final del acumulador puede variar en cada ejecución debido a condiciones de carrera.
+
+2)- se puede notar que hay una falta de sincronización, lo cual provoca que el tiempo cambie. 
