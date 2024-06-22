@@ -1,0 +1,8 @@
+#!bin/bash
+
+read -p "Ingresa un nombre: " nombre
+
+response=$(curl -s "https://api.agify.io/?name=$nombre")
+edad=$(echo $response | jq -r '.age')
+
+echo "La edad probable de $nombre es $edad años."

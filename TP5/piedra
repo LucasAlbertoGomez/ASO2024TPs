@@ -1,0 +1,18 @@
+#!/bin/bash
+
+computadora=$(( ( RANDOM % 3 ) + 1 ))
+
+echo "Bienvenido"
+echo "Elige:"
+echo "1 -Piedra"
+echo "2 -Papel"
+echo "3 -Tijeras"
+read -p "Elige entre (1, 2 o 3): " usuario
+
+if [[ $usuario -eq $computadora ]]; then
+    echo "Empate"
+elif [[ ($usuario -eq 1 && $computadora -eq 3) || ($usuario -eq 2 && $computadora -eq 1) || ($usuario -eq 3 && $computadora -eq 2) ]]; then
+    echo "Ganaste"
+else
+    echo "Perdiste"
+fi
